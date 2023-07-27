@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formvalidate</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Font Awesome css -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Normalizer css -->
+    <link href="assets/css/normalize.css" rel="stylesheet">
+
+    <!-- Owl Carousel css -->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.min.css" rel="stylesheet">
+
+    <!-- Magnific popup css -->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+
+    <!-- Site css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive css -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+
+    <!--Application Form-->
+    <section id="contact" class="contact-area section">
+        <div class="container">
+            <br>
+            <h2 class="text-success text-center"><u>PLEASE FILL THE FORM</u></h2><br>
+            <div class="row">
+                <div class="col-md-12 m-auto d-block ">
+
+                    <!-- Contact form starts -->
+                    <div class="contact-form">
+
+                        <!-- Submition status -->
+                        <!--div id="form-messages"> </div-->
+
+                        <form name="myform" id="ajax-contact1" action="/action_page.php" method="post">
+                            <div class="row">
+                                <div class="col-md-12 m-auto d-block">
+                                    <div class="form-group in_name">
+                                        <input type="text" name="name1" class="form-control" id="name1"
+                                            placeholder="NAME">
+                                    </div>
+                                    <div class="form-group in_address">
+                                        <input type="text" name="address" class="form-control" id="address"
+                                            placeholder="ADDRESS">
+                                        <input type="address1" name="address1" class="form-control" id="address1">
+                                    </div>
+                                    <div class="form-group in_city">
+                                        <input type="text" name="city" class="form-control" id="city"
+                                            placeholder="CITY">
+                                    </div>
+                                    <div class="form-group in_state">
+                                        <select class="form-control">
+                                            <option value="#"> STATE</option>
+                                            <option value="asam">Asam</option>
+                                            <option value="delhi">Delhi</option>
+                                            <option value="odisha">Odisha</option>
+                                            <option value="maharastra">Maharastra</option>
+                                            <option value="bihar">Bihar</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group in_pin">
+                                        <input type="pin" name="pin" class="form-control" id="pin" placeholder="PIN">
+                                    </div>
+                                    <div class="from-group in_gender form-check">
+                                        GENDER <br>
+
+                                        <input type="radio" name="gender" id="male" value="male" checked />
+                                        <label for="male">MALE</label>
+                                        &nbsp;
+                                        <input type="radio" name="gender" id="female" value="female" />
+                                        <label for="female">FEMALE</label>
+                                    </div>
+                                    <div class="form-group in_age">
+                                        <input type="text" name="age" class="form-control" id="age" placeholder="AGE">
+                                    </div>
+                                    <div class="form-group in_education form-check">
+
+                                        EDUCATION <br>
+
+                                        <input type="checkbox" id="matriculation" name="matriculation"
+                                            value="matriculation"><label for="matriculation">MATRICULATION
+                                        </label><br>
+                                        <input type="checkbox" id="inter" name="inter" value="inter"><label
+                                            for="inter">INTER
+                                        </label><br>
+                                        <input type="checkbox" id="graduation" name="graduation"
+                                            value="graduation"><label for="graduation">GRADUATION
+                                        </label>
+
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group in_message">
+                                            <textarea rows="5" name="message" class="form-control" id="message"
+                                                placeholder="ABOUT YOUR SELF "></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 in_buttom">
+                                        <input type="submit" onclick="return validateForm(/*1,2*/)" value="SUBMIT" name="submit"
+                                           id="submitbuttom" >
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- Contact form ends-->
+
+    </section>
+</body>
+
+</html>
